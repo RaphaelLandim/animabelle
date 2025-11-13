@@ -1,0 +1,21 @@
+# robots.txt para AnimaBelle
+# https://animabelle.com.br/robots.txt
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://animabelle.com.br/sitemap.xml
+
+# Bloquear arquivos desnecessários
+Disallow: /CNAME
+Disallow: /README.md
+
+# Permitir todos os recursos importantes
+Allow: /css/
+Allow: /js/
+Allow: /imagens/
+Allow: /*.html
+Allow: /*.jpg
+Allow: /*.png
+
