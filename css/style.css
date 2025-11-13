@@ -34,19 +34,26 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background: #fff;
+  background: linear-gradient(180deg, #fff 0%, #f7eef2 100%);
   background: linear-gradient(180deg, #fff 0%, var(--rosa-claro) 100%);
+  color: #5b5b5b;
   color: var(--cinza);
   line-height: 1.6;
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 /* Tipografia */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  color: #a46c7d;
   color: var(--rosa-escuro);
   line-height: 1.2;
   font-weight: 600;
+  margin: 0;
 }
 
 /* ============================================
@@ -115,18 +122,24 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-flex;
   align-items: center;
   gap: 8px;
+  background: #c990a5;
   background: var(--rosa);
-  color: #fff;
+  color: #fff !important;
+  border: none;
   border-radius: 999px;
   padding: 10px 26px;
   font-weight: 600;
   transition: all 0.3s ease;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .btn-highlight:hover {
+  background: #a46c7d;
   background: var(--rosa-escuro);
-  color: #fff;
+  color: #fff !important;
   transform: translateY(-2px);
+  text-decoration: none;
 }
 
 #hero {
@@ -756,6 +769,12 @@ footer p {
   .hero {
     min-height: 65vh !important;
     padding: 90px 0 50px !important;
+  }
+
+  .hero-slide-1,
+  .hero-slide-2 {
+    background-size: 100% !important;
+    background-position: center !important;
   }
 
   .hero h1 {
