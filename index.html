@@ -394,9 +394,80 @@
     </div>
   </section>
 
-  <a href="#" target="_blank" class="whatsapp-float wa-link" aria-label="Abrir WhatsApp">
+  <!-- Botão flutuante: abre a caixa de conversa -->
+  <button type="button" class="whatsapp-float chat-widget-toggle" id="chatWidgetToggle" aria-label="Abrir chat - Como podemos te ajudar?">
     <i class="bi bi-whatsapp"></i>
-  </a>
+  </button>
+
+  <!-- Caixa de conversa (chat widget) estilo chatbot -->
+  <div id="chatWidget" class="chat-widget" aria-hidden="true">
+    <div class="chat-widget-box">
+      <div class="chat-widget-header">
+        <div class="chat-widget-header-info">
+          <span class="chat-widget-title">AnimaBelle</span>
+          <span class="chat-widget-subtitle">Como podemos te ajudar?</span>
+        </div>
+        <button type="button" class="chat-widget-close" id="chatWidgetClose" aria-label="Fechar chat">
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+      <div class="chat-widget-body">
+        <div class="chat-step chat-step-home" id="chatStepHome">
+          <div class="chat-msg chat-msg-bot">
+            <p>Olá! Que bom ter você aqui 😊</p>
+            <p>Sou a assistente virtual da AnimaBelle e estou pronta para te ajudar no que precisar.</p>
+            <p class="chat-msg-hint">Escolha uma opção abaixo ou fale direto conosco pelo WhatsApp:</p>
+          </div>
+          <div class="chat-quick-actions">
+            <button type="button" class="chat-quick-btn" data-action="agendar">
+              <i class="bi bi-calendar-check"></i> Agendar avaliação
+            </button>
+            <button type="button" class="chat-quick-btn" data-action="servicos">
+              <i class="bi bi-stars"></i> Conhecer os serviços
+            </button>
+            <button type="button" class="chat-quick-btn chat-quick-wa" data-action="whatsapp">
+              <i class="bi bi-whatsapp"></i> Falar no WhatsApp
+            </button>
+          </div>
+        </div>
+        <div class="chat-step chat-step-agendar" id="chatStepAgendar" hidden>
+          <div class="chat-msg chat-msg-bot">
+            <p>Ótimo! Para agendar sua avaliação, preencha seus dados abaixo. Em seguida você será direcionado ao nosso WhatsApp.</p>
+          </div>
+          <form id="chatFormAgendar" class="chat-form-agendar" novalidate>
+            <div class="chat-form-group">
+              <label for="chatNome">Nome completo</label>
+              <input type="text" id="chatNome" name="nome" required placeholder="Seu nome completo" autocomplete="name">
+            </div>
+            <div class="chat-form-group">
+              <label for="chatEmail">E-mail</label>
+              <input type="email" id="chatEmail" name="email" required placeholder="seu@email.com" autocomplete="email">
+            </div>
+            <div class="chat-form-group">
+              <label for="chatCelular">Celular (WhatsApp)</label>
+              <input type="tel" id="chatCelular" name="celular" required placeholder="(21) 99999-9999" autocomplete="tel">
+            </div>
+            <div class="chat-form-actions">
+              <button type="button" class="chat-btn-back" id="chatAgendarVoltar">Voltar</button>
+              <button type="submit" class="chat-btn-submit" id="chatBtnSubmit">
+                <i class="bi bi-send"></i> Enviar
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="chat-step chat-step-success" id="chatStepSuccess" hidden>
+          <div class="chat-msg chat-msg-bot chat-msg-success">
+            <p><i class="bi bi-check-circle-fill"></i></p>
+            <p><strong>Recebemos seus dados!</strong></p>
+            <p>Em breve entramos em contato pelo WhatsApp. Você também pode nos chamar agora:</p>
+          </div>
+          <button type="button" class="chat-quick-btn chat-quick-wa" id="chatAbrirWhatsApp">
+            <i class="bi bi-whatsapp"></i> Abrir WhatsApp agora
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <footer class="text-center">
     <div class="container">
