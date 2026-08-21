@@ -18,4 +18,13 @@ Allow: /imagens/
 Allow: /*.html
 Allow: /*.jpg
 Allow: /*.png
+Allow: /*.webp
+
+
+
+
+
+
+
+
 

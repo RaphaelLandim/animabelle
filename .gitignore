@@ -1,0 +1,49 @@
+# Arquivos do Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDEs e Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Arquivos temporários
+*.tmp
+*.log
+*.cache
+
+# Node modules (se usar build tools)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Arquivos de build
+dist/
+build/
+
+# Arquivos minificados (opcional - mantenha se quiser versionar)
+# *.min.css
+# *.min.js
+
+# Arquivos de backup
+*.bak
+*.backup
+
+# Arquivos de ambiente
+.env
+.env.local
+
+# Arquivos de documentação/guia (opcionais - podem ser removidos)
+ANALYTICS.md
+MINIFICACAO.md
+COMO_USAR_ANALYTICS.md
+GUIA_DEPLOY.md
+COMANDOS_GIT.md
+TESTE_RAPIDO.md
+RESUMO_FINAL.md
+CHANGELOG.md
+CHECKLIST_DEPLOY.txt
+
