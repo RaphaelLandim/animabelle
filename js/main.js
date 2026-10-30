@@ -14,7 +14,7 @@
 
   const NOTICE_CONFIG = {
     // Troque para false quando todos os tratamentos estiverem liberados.
-    enabled: true
+    enabled: false
   };
 
   // Perfis sociais centralizados por contexto para evitar direcionamentos incorretos.
