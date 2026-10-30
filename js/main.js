@@ -17,9 +17,10 @@
     enabled: true
   };
 
-  // Insira aqui as URLs oficiais quando estiverem disponíveis.
+  // Perfis sociais centralizados por contexto para evitar direcionamentos incorretos.
   const SOCIAL_LINKS = {
-    instagram: 'https://www.instagram.com/flavia_almeidas2',
+    instagramClinica: 'https://www.instagram.com/animabelle.estetica/',
+    instagramProfissional: 'https://www.instagram.com/flavia_almeidas2',
     facebook: ''
   };
 
