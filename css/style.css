@@ -467,6 +467,84 @@ h2 em {
   margin-top: 34px;
 }
 
+.hero-instagram-link {
+  display: inline-flex;
+  max-width: 390px;
+  align-items: center;
+  gap: 12px;
+  margin-top: 22px;
+  padding: 10px 14px 10px 10px;
+  color: var(--brown-2);
+  background: rgba(255, 255, 255, 0.46);
+  border: 1px solid rgba(59, 39, 31, 0.13);
+  border-radius: 999px;
+  transition: background 250ms ease, border-color 250ms ease, transform 250ms ease;
+}
+
+.hero-instagram-link:hover {
+  background: rgba(255, 255, 255, 0.78);
+  border-color: rgba(183, 146, 103, 0.72);
+  transform: translateY(-2px);
+}
+
+.hero-instagram-link:focus-visible {
+  outline: 2px solid var(--champagne);
+  outline-offset: 3px;
+}
+
+.hero-instagram-icon {
+  display: grid;
+  width: 38px;
+  height: 38px;
+  flex: 0 0 auto;
+  place-items: center;
+  color: var(--paper);
+  background: var(--brown);
+  border-radius: 50%;
+}
+
+.hero-instagram-icon svg {
+  width: 17px;
+  height: 17px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.45;
+}
+
+.hero-instagram-icon circle:last-child {
+  fill: currentColor;
+  stroke: none;
+}
+
+.hero-instagram-copy {
+  display: grid;
+  min-width: 0;
+  gap: 2px;
+  line-height: 1.2;
+}
+
+.hero-instagram-copy strong {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.015em;
+}
+
+.hero-instagram-copy small {
+  overflow: hidden;
+  color: var(--muted);
+  font-size: 0.66rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.hero-instagram-arrow {
+  margin-left: auto;
+  color: var(--champagne);
+  font-size: 0.82rem;
+}
+
 .hero-note {
   display: flex;
   align-items: center;
@@ -2047,99 +2125,4 @@ h2 em {
     height: 1px;
   }
 
-  .journey-timeline li {
-    display: block;
-    padding: 0 38px 0 0;
-  }
-
-  .journey-timeline li > span {
-    margin-bottom: 28px;
-    box-shadow: 0 0 0 8px var(--paper);
-  }
-
-  .journey-timeline h3 {
-    font-size: 2rem;
-  }
-
-  .footer-grid {
-    grid-template-columns: 1fr auto auto;
-    align-items: end;
-  }
-
-  .footer-legal {
-    grid-column: auto;
-    margin: 0;
-    padding: 0 0 0 38px;
-    border-top: 0;
-    border-left: 1px solid var(--white-line);
-  }
-
-  .chat-toggle {
-    right: 24px;
-    bottom: 24px;
-  }
-
-  .chat-widget {
-    right: 24px;
-    bottom: 88px;
-  }
-}
-
-@media (max-width: 390px) {
-  .container {
-    width: min(calc(100% - 32px), var(--container));
-  }
-
-  .brand-copy strong {
-    font-size: 1.15rem;
-  }
-
-  .brand-copy small {
-    font-size: 0.46rem;
-  }
-
-  .hero h1 {
-    font-size: clamp(3.35rem, 16vw, 4.25rem);
-  }
-
-  .hero-actions {
-    align-items: stretch;
-    flex-direction: column;
-  }
-
-  .hero-actions .button,
-  .hero-actions .text-link {
-    align-self: flex-start;
-  }
-
-  .hero-seal {
-    right: -14px;
-    width: 84px;
-    height: 84px;
-  }
-
-  .contact-row {
-    grid-template-columns: 1fr;
-    gap: 6px;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-
-  *,
-  *::before,
-  *::after {
-    scroll-behavior: auto !important;
-    transition-duration: 0.01ms !important;
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-  }
-
-  .reveal.reveal-ready {
-    opacity: 1;
-    transform: none;
-  }
-}
+  .journe
