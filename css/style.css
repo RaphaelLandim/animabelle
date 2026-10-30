@@ -1338,6 +1338,58 @@ h2 em {
   transform: translateY(-2px);
 }
 
+.social-link:focus-visible {
+  outline: 2px solid var(--champagne);
+  outline-offset: 3px;
+}
+
+.social-link--profile {
+  display: inline-flex;
+  width: auto;
+  min-height: 48px;
+  gap: 10px;
+  padding: 8px 16px 8px 13px;
+  border-radius: 999px;
+}
+
+.social-link--profile svg {
+  width: 19px;
+  height: 19px;
+  flex: 0 0 auto;
+}
+
+.social-link-copy {
+  display: grid;
+  gap: 1px;
+  text-align: left;
+}
+
+.social-link-copy small,
+.social-link-copy strong {
+  display: block;
+  line-height: 1.2;
+}
+
+.social-link-copy small {
+  color: var(--muted);
+  font-size: 0.54rem;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  transition: color 300ms ease;
+}
+
+.social-link-copy strong {
+  color: currentColor;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.015em;
+}
+
+.social-link--profile:hover .social-link-copy small {
+  color: rgba(255, 255, 255, 0.68);
+}
+
 .social-link.professional-social-link {
   width: 36px;
   height: 36px;
@@ -1350,6 +1402,14 @@ h2 em {
 
 .social-link[aria-disabled="true"] {
   cursor: default;
+  opacity: 0.5;
+}
+
+.social-link[aria-disabled="true"]:hover {
+  color: var(--brown-2);
+  background: transparent;
+  border-color: rgba(59, 39, 31, 0.2);
+  transform: none;
 }
 
 .social-link svg {
@@ -1764,6 +1824,69 @@ h2 em {
 
   .footer-links {
     grid-template-columns: repeat(4, max-content);
+  }
+}
+
+@media (max-width: 639px) {
+  .professional-grid {
+    gap: 48px;
+  }
+
+  .professional-meta {
+    margin: 20px 0 24px;
+  }
+
+  .professional-social-link {
+    width: 44px;
+    height: 44px;
+  }
+
+  .professional-photo {
+    width: min(88%, 390px);
+  }
+
+  .contact-heading {
+    margin-bottom: 38px;
+  }
+
+  .contact-info {
+    padding: 26px 22px;
+  }
+
+  .contact-info address {
+    margin-bottom: 26px;
+  }
+
+  .contact-socials {
+    grid-template-columns: 1fr;
+    gap: 11px;
+    margin-bottom: 26px;
+  }
+
+  .contact-socials-actions {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .social-link {
+    width: 48px;
+    height: 48px;
+  }
+
+  .social-link--profile {
+    width: auto;
+    min-height: 48px;
+    padding-right: 15px;
+  }
+
+  .contact-info > .button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .map-wrap,
+  .map-wrap iframe {
+    min-height: 350px;
   }
 }
 
